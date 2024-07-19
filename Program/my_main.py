@@ -41,9 +41,9 @@ while True:
     # It will now launch the mission coresponding to the color
     # If detected color is Red, then run RJ's & Cleveland's mission
     if col == Color.SENSOR_BLUE:
-        sample_mission1.Run(br)
+        run_1.Run(br)
         # If detected color is Blue, then run Sample Mission 1
-    if col == Color.SENSOR_ORANGE:
+"""     if col == Color.SENSOR_ORANGE:
         sample_mission2.Run(br)
         # If detected color is Orange, then run Sample Mission 2
     if col == Color.SENSOR_YELLOW:
@@ -54,4 +54,4 @@ while True:
         # If detected color is Green, then run Sample Mission 3
     if col == Color.SENSOR_RED:
         sample_mission4.Run(br)
-        # If detected color is Red, then run Sample Mission 4
+        # If detected color is Red, then run Sample Mission 4 """
