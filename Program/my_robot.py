@@ -9,7 +9,7 @@ from pybricks.parameters import (
     Button,
     Icon,
 )
-from pybricks.robotics import GyroDriveBase
+from pybricks.robotics import GyroDriveBase, DriveBase
 from pybricks.hubs import PrimeHub
 from pybricks.tools import wait
 
@@ -42,10 +42,10 @@ class BaseRobot:
 
     def __init__(self):
         self.hub = PrimeHub(top_side=Axis.Z, front_side=-Axis.Y)
-        self._version = "0.1 05/19/2023"
+        self._version = "0.1 20.07.2024"
         self.leftDriveMotor = Motor(Port.E, Direction.COUNTERCLOCKWISE)
         self.rightDriveMotor = Motor(Port.A)
-        self.robot = GyroDriveBase(
+        self.robot = DriveBase(
             self.leftDriveMotor,
             self.rightDriveMotor,
             TIRE_DIAMETER,
