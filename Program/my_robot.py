@@ -27,7 +27,7 @@ MIN_LARGE_MOTOR_VOLTAGE = 3000  # mV
 MAX_LARGE_MOTOR_TORQUE = 560
 
 
-class BaseRobot:
+class my_robot:
     """
     A collection of methods and Spike Prime for FLL Team 24277. \
     Uses pybricks for most functionality.
@@ -35,7 +35,7 @@ class BaseRobot:
     Example:
 
     >>> from base_robot import *
-    >>> br = BaseRobot()
+    >>> br = my_robot()
     >>> br.GyroDrive(400) #400mm at default speed
     >>> br.GyroTurn(90) #90 deg to the right
     """

@@ -7,7 +7,7 @@ from my_robot import *
 
 # When we run this program from the master program, we will call this
 # "Run(br)" method.
-def Run(br: BaseRobot):
+def Run(br: my_robot):
     br.GyroDrive(25)
     br.leftAttachmentMotor.run_angle(200, -180)  # speed 200, 180 degrees
     br.GyroTurn(90)
@@ -18,9 +18,9 @@ def Run(br: BaseRobot):
 
 # If running this program directly (not from the master program), this is
 # how we know it is running directly. In which case, this method will
-# create a BaseRobot and run the Run(br) method above.
+# create a my_robot and run the Run(br) method above.
 # In other words, keep these three lines at the bottom of your code and
 # everything will be fine.
 if __name__ == "__main__":
-    br = BaseRobot()
+    br = my_robot()
     Run(br)

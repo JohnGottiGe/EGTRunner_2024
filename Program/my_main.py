@@ -6,7 +6,7 @@ import run_1
 #import sample_mission3
 #import sample_mission4
 
-br = BaseRobot()
+br = my_robot()
 
 pressed = []
 while True:
